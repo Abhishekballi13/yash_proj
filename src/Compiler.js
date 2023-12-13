@@ -5,7 +5,7 @@ const Compiler = () => {
   const { isOpen, onToggle,onClose} = useDisclosure()
   return (
     <Stack direction={'row'} width="100%" spacing={1}>
-    hwllo
+    {/* Problem Section */}
       <Box bg='white' w='50%' h='750px'>
         <Text as='b' color='black' fontSize='20px'>Tranform To prime</Text>
         <br />
@@ -13,10 +13,9 @@ const Compiler = () => {
         <Divider h='5'/>
         <Text>
         Given an array of n integers. Find the minimum non-negative number to be inserted in array, so that sum of all elements of array becomes prime.
-
-Example 1:
-
+        Example 1:
         </Text>
+        {/* Sample Test Case Section */}
         <Box color='#DEDAD9' border='1px' h='100px'>
           <Text as='b' color='black'>
             Input : N=5
@@ -33,6 +32,8 @@ Example 1:
           </Text>
         </Box>
       </Box>
+
+      {/* Compiler Section */}
       <Box bg='#DEDAD9' w='100%' h='750px'>
       Compiler......
       <Button onClick={onToggle} display='flex' position='absolute' bottom='4' right='4'>Compile & Run</Button>
@@ -46,6 +47,7 @@ Example 1:
           rounded='md'
           shadow='md'
         >
+        {/* Output Section */}
         <Text>Output Window</Text>
         <CloseButton
               position="absolute"
